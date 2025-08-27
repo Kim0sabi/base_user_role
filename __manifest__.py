@@ -13,14 +13,15 @@
     "website": "https://github.com/OCA/server-backend",
     "depends": ["base"],
     "data": [
-        "security/ir.model.access.csv",
-        "data/ir_cron.xml",
-        "data/ir_module_category.xml",
+        "data/ir_module_category.xml",       # categorías de módulos, opcional
         "views/role.xml",
         "views/user.xml",
         "views/group.xml",
         "wizards/create_from_user.xml",
         "wizards/wizard_groups_into_role.xml",
+        "security/ir.model.access.csv",     # permisos de acceso **después** de los modelos
+        "data/ir_cron.xml", 
+        
     ],
     "installable": True,
 }
